@@ -7,19 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FE8B9D45291D29B60071D543 /* swift_uiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE8B9D44291D29B60071D543 /* swift_uiApp.swift */; };
-		FE8B9D47291D29B60071D543 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE8B9D46291D29B60071D543 /* ContentView.swift */; };
+		FE8B9D45291D29B60071D543 /* SwiftUiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE8B9D44291D29B60071D543 /* SwiftUiApp.swift */; };
+		FE8B9D47291D29B60071D543 /* Section1.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE8B9D46291D29B60071D543 /* Section1.swift */; };
 		FE8B9D49291D29B60071D543 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE8B9D48291D29B60071D543 /* Assets.xcassets */; };
 		FE8B9D4D291D29B60071D543 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE8B9D4C291D29B60071D543 /* Preview Assets.xcassets */; };
+		FE8B9D54291D2BB90071D543 /* Section2.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE8B9D53291D2BB90071D543 /* Section2.swift */; };
+		FE8B9D56291D2CA60071D543 /* Section3.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE8B9D55291D2CA60071D543 /* Section3.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		FE8B9D41291D29B60071D543 /* swift-ui.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "swift-ui.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		FE8B9D44291D29B60071D543 /* swift_uiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swift_uiApp.swift; sourceTree = "<group>"; };
-		FE8B9D46291D29B60071D543 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FE8B9D44291D29B60071D543 /* SwiftUiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUiApp.swift; sourceTree = "<group>"; };
+		FE8B9D46291D29B60071D543 /* Section1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Section1.swift; sourceTree = "<group>"; };
 		FE8B9D48291D29B60071D543 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FE8B9D4A291D29B60071D543 /* swift_ui.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = swift_ui.entitlements; sourceTree = "<group>"; };
 		FE8B9D4C291D29B60071D543 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FE8B9D53291D2BB90071D543 /* Section2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Section2.swift; sourceTree = "<group>"; };
+		FE8B9D55291D2CA60071D543 /* Section3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Section3.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,8 +56,10 @@
 		FE8B9D43291D29B60071D543 /* swift-ui */ = {
 			isa = PBXGroup;
 			children = (
-				FE8B9D44291D29B60071D543 /* swift_uiApp.swift */,
-				FE8B9D46291D29B60071D543 /* ContentView.swift */,
+				FE8B9D44291D29B60071D543 /* SwiftUiApp.swift */,
+				FE8B9D46291D29B60071D543 /* Section1.swift */,
+				FE8B9D53291D2BB90071D543 /* Section2.swift */,
+				FE8B9D55291D2CA60071D543 /* Section3.swift */,
 				FE8B9D48291D29B60071D543 /* Assets.xcassets */,
 				FE8B9D4A291D29B60071D543 /* swift_ui.entitlements */,
 				FE8B9D4B291D29B60071D543 /* Preview Content */,
@@ -139,8 +145,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FE8B9D47291D29B60071D543 /* ContentView.swift in Sources */,
-				FE8B9D45291D29B60071D543 /* swift_uiApp.swift in Sources */,
+				FE8B9D47291D29B60071D543 /* Section1.swift in Sources */,
+				FE8B9D56291D2CA60071D543 /* Section3.swift in Sources */,
+				FE8B9D54291D2BB90071D543 /* Section2.swift in Sources */,
+				FE8B9D45291D29B60071D543 /* SwiftUiApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,10 +293,12 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "me.seokang.swift-ui";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -321,10 +331,12 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "me.seokang.swift-ui";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
